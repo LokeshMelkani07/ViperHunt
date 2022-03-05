@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Fredoka:wght@300&family=Libre+Baskerville&family=Montserrat&family=Proza+Libre&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-image: url('background.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score{
+    /* background-color: black; */
+    background-image: url('background.jpg');
+    color: black;
+    position: absolute;
+    top: 9px;
+    right: 188px;
+    font-size: 39px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+#highScore{
+    background-image: url('background.jpg');
+    color: black;
+    position: absolute;
+    top: 82px;
+    right: 81px;
+    font-size: 39px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#board{
+    /* background: linear-gradient(green,black); */
+    background-color: black;
+    /* vmin is the minimum between the viewport's height or width in percentage depending on which is smaller. vmax is the maximum between the viewport's height or width in percentage depending on which is bigger */
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    /* Fr is a fractional unit and 1fr is for 1 part of the available space */
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    width: 30px;
+    height: 30px;
+    background-image: url('unnamed.png');
+    background-size: 30px 30px;
+}
+
+.snake{
+    background-image: url('background.jpg');
+
+}
+
+.food{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 0.25vmin solid black;
+    border-radius: 100%;
+}
+
+.imgBox img{
+    position: absolute;
+    top: 370px;
+    width: 197px;
+    left: 1081px;
+}
